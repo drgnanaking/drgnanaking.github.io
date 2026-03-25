@@ -8,7 +8,87 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap');
-        
+
+        <script>
+function showPage(pageId) {
+    document.querySelectorAll('.page-section').forEach(sec => sec.classList.add('hidden'));
+    document.getElementById(pageId).classList.remove('hidden');
+    window.scrollTo(0,0);
+}
+</script>
+
+    <a href="#" onclick="showPage('home')">Home</a>
+<a href="#" onclick="showPage('publications')">Publications</a>
+<a href="#" onclick="showPage('patents')">Patents</a>
+<a href="#" onclick="showPage('grants')">Grants</a>
+<a href="#" onclick="showPage('activities')">Activities</a>
+<a href="#" onclick="showPage('fdp')">FDP</a>
+
+    <div id="home" class="page-section">
+    <!-- KEEP YOUR CURRENT HTML HERE -->
+</div>
+
+    <section id="publications" class="page-section hidden p-10">
+
+<h1 class="text-3xl font-bold mb-6">Research Publications</h1>
+
+<h2 class="text-xl font-semibold">SCI / Scopus Journals</h2>
+<ul class="list-disc ml-6 space-y-2">
+
+<li>Improved block based segmentation algorithm – Journal of Intelligent & Fuzzy Systems (SCI)</li>
+<li>Parallel LZW compression – Applied Mechanics and Materials (Scopus)</li>
+<li>Hybrid compression scheme using wavelet – SCI</li>
+<li>IRIS Recognition System</li>
+<li>Video Watermarking for Medical Applications</li>
+<li>Edge Preserving Haze Removal – Raspberry Pi</li>
+<li>RFID Toll Plaza System</li>
+<li>Wireless Sensor Network Authentication</li>
+<li>Secure Multimedia File Hiding – Scopus</li>
+<li>Human Detection Robot in Flood – Scopus</li>
+<li>3D Filament Extruder – Scopus</li>
+<li>Underwater Pipeline Modem – Scopus</li>
+<li>MRI & PET Fusion (Springer)</li>
+<li>Brain Tumor Detection – Scopus</li>
+<li>Pancreatic Tumor Detection – SCI</li>
+<li>COVID CT Detection – SCI</li>
+<li>UNet + CNN COVID Detection (2025)</li>
+<li>Pancreatic Cancer Detection – Elsevier (2025)</li>
+
+</ul>
+
+<h2 class="text-xl font-semibold mt-6">IEEE / Conferences</h2>
+<ul class="list-disc ml-6 space-y-2">
+
+<li>Zebra Line Detection – IEEE ICACCS</li>
+<li>IoT Glucose Monitoring – IEEE</li>
+<li>Ship Detection – IEEE</li>
+<li>Medical Image Fusion – IEEE</li>
+<li>FPGA Model Design – Springer</li>
+<li>Food Quality Checker (ML)</li>
+<li>Load Carrying Robot</li>
+<li>YOLOv8 Pothole Detection – IEEE 2024</li>
+<li>Epileptic Seizure Prediction – IEEE 2025</li>
+
+</ul>
+
+<button onclick="showPage('home')" class="mt-6 bg-black text-white px-4 py-2">Back</button>
+
+</section>
+
+    <section id="patents" class="page-section hidden p-10">
+
+<h1 class="text-3xl font-bold mb-6">Patents</h1>
+
+<ul class="list-disc ml-6 space-y-3">
+<li>Modified Random Forest Algorithm for Alzheimer Disease – 2021</li>
+<li>IoT COVID Patient Monitoring System – Design Patent (2023)</li>
+</ul>
+
+<button onclick="showPage('home')" class="mt-6 bg-black text-white px-4 py-2">Back</button>
+
+</section>
+
+
         body {
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
